@@ -18,11 +18,23 @@ Installation
 
 This bundle can be installed using composer by adding the following in the `require` section of your `composer.json` file:
 
-```
+```json
+{
     "require": {
-        ...
         "dmr/dmr-bundle": "0.1.*-dev"
-    },
+    }
+}
+```
+
+Note that if your application requires a stability greater stable than `dev` you have to include the `dmr/dmr` requirement, because only the root package can whitelist stabilities less stable than the configured minimum stability.
+
+```json
+{
+    "require": {
+        "dmr/dmr": "0.1.*@dev",
+        "dmr/dmr-bundle": "0.1.*-dev"
+    }
+}
 ```
 
 Alternatively, you can [download](https://github.com/marcospassos/DMRBundle/archive/master.zip) an archive of the bundle and unpack it in the `vendor/bundles/DMR/Bundle/DMRBundle` directory of your application, but it is not recommended.
