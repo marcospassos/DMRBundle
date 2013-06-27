@@ -1,0 +1,40 @@
+{
+    "minimum-stability" : "dev",
+    "name" : "dmr/dmr-bundle",
+    "license" : "MIT",
+    "description" : "Allows to easily use the DMR library in a Symfony project",
+    "keywords" : ["doctrine", "mapping"],
+    "type" : "symfony-bundle",
+    "homepage" : "https://github.com/marcospassos/DMRBundle",
+    "authors" : [{
+            "name" : "Marcos Passos",
+            "homepage" : "http://marcospassos.com"
+        }, {
+            "name" : "The contributors",
+            "homepage" : "http://github.com/marcospassos/DMR/contributors"
+        }
+    ],
+    "require" : {
+        "symfony/framework-bundle": "2.*",
+        "dmr/dmr": "0.1.*-dev"
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "3.7.*",
+        "doctrine/doctrine-bundle": ">=2.1",
+        "doctrine/mongodb-odm-bundle": "3.0.*@dev"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "DMR\\Bundle\\DMRBundle" : ""
+        }
+    },
+    "target-dir":   "DMR/Bundle/DMRBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "config" : {
+        "bin-dir" : "bin"
+    }
+}
