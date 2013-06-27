@@ -11,20 +11,10 @@ PHP 5.3+ library that provides a simple and flexible way to load custom mapping 
 
 It supports Yaml, Xml and Annotation drivers which will be chosen depending on currently used mapping driver for your domain objects.
 
-Documentation is available the [official page of DMR][dmr-homepage].
+Documentation is available on the [official page of DMR](https://github.com/marcospassos/DMR).
 
 Installation
 ------------
-
-## Prerequisites
-
-As this bundle is an integration for Symfony of the [DMR](dmr-homepage) library, it requires you to first install [DMR](dmr-homepage) in a Symfony project.
-
-## Download the bundle
-
-You can download an archive of the bundle and unpack it in the `vendor/bundles/DMR/Bundle/DMRBundle` directory of your application.
-
-### Composer Style
 
 This bundle can be installed using composer by adding the following in the `require` section of your `composer.json` file:
 
@@ -34,21 +24,20 @@ This bundle can be installed using composer by adding the following in the `requ
         "dmr/dmr-bundle": "0.1.*-dev"
     },
 ```
-## Register the bundle
+
+Alternatively, you can [download](https://github.com/marcospassos/DMRBundle/archive/master.zip) an archive of the bundle and unpack it in the `vendor/bundles/DMR/Bundle/DMRBundle` directory of your application, but it is not recommended.
+
+### Register the bundle
 
 You must register the bundle in your kernel:
 
 ``` php
 <?php
-
 // app/AppKernel.php
-
 public function registerBundles()
 {
     $bundles = array(
-
         // ...
-
         new DMR\Bundle\DMRBundle\DMRBundle()
     );
 
@@ -67,7 +56,7 @@ $data = $container->get('dmr.reader')->read('Acme\Document\User', 'Acme\Doctrine
 $data = $container->get('dmr.reader')->read($object, 'Acme\Doctrine\ExtensionNamespace');
 ```
 
-For more details, you can check out the [official page of DMR](dmr-homepage).
+For more details, you can check out the [official page of DMR](https://github.com/marcospassos/DMR).
 
 ## Feedback
 
