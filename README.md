@@ -2,6 +2,8 @@ Doctrine Mapping Reader Bundle
 ==============================
 Provides a Doctrine Mapping Reader integration for your Symfony projects.
 
+[![Build Status](https://travis-ci.org/marcospassos/DMRBundle.png)](https://travis-ci.org/marcospassos/DMRBundle)
+
 About DMR
 ---------
 
@@ -70,6 +72,3 @@ For more details, you can check out the [official page of DMR](dmr-homepage).
 ## Feedback
 
 **Please provide feedback!** We want to make this library useful in as many projects as possible. Please raise a Github issue, and point out what you do and don't like, or fork the project and make suggestions. **No issue is too small.**
-
-
-
