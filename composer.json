@@ -11,7 +11,7 @@
             "homepage" : "http://marcospassos.com"
         }, {
             "name" : "The contributors",
-            "homepage" : "http://github.com/marcospassos/DMR/contributors"
+            "homepage" : "http://github.com/marcospassos/DMRBundle/contributors"
         }
     ],
     "require" : {
