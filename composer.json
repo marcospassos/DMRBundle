@@ -16,7 +16,7 @@
     ],
     "require" : {
         "symfony/framework-bundle": "2.*",
-        "dmr/dmr": "0.1.*-dev"
+        "dmr/dmr": "0.1.*@dev"
     },
     "require-dev" : {
         "phpunit/phpunit" : "3.7.*",
